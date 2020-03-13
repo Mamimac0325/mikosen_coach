@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+ <meta charset="utf-8">
+ <title>Sleep record</title>
+ <!--[if lt IE 9]>
+ <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+ <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+ <![endif]-->
+ <style>
+    body {
+        font-family: 'Copperplate',sans-serif;
+        width: 400px;
+        font-size: 0px;
+    }
+
+    h1{
+        color:#dddddd;
+        font-size: 50px;
+    }
+
+    .coffee {
+        background-color: #4d260b;
+        color:white;
+        margin: 0 25px;
+        font-size: 20px;
+    }
+    .mug {
+        background-color: #81D8D0;
+        font-size: 20px;
+        color: #00494d;
+    }
+
+    .line-left {
+        background-color: #81D8D0;
+        border-left: solid white 40px;
+        border-bottom: solid white 40px;
+        margin-left: 30px;
+        padding: 20px 0 0 20px;
+    }
+
+    .ribbon-line{
+        background-color: white;
+        border-bottom: solid white 40px;
+        margin-top: -40px;
+    }
+
+    .mug-bottom{
+        background-color: #81D8D0;
+        border-left: solid white 40px;
+        margin-left: 30px;
+        padding-left: 20px;
+        height: 60px;
+    }
+  </style>
+ </head>
+ 
+ <body>
+ <!----- ヘッダー yuge ----->
+     <h1>Good morning.</h1>
+
+ <!----- ヘッダー END ----->
+ <p class="coffee">How was the sleep ? </p>
+
+ <!----- メイン mag ----->
+<div class="mug">
+    <div class="line-left">
+    <p>Time ?
+        <br>
+        <span>start</span>
+        <select name="start">
+            <option value="9">9pm</option>
+            <option value="10">10pm</option>
+            <option value="11">11pm</option>
+            <option value="0">0am</option>
+            <option value="1">1am</option>
+            <option value="2">2am</option>
+            <option value="3">3am</option>
+            <option value="4">4am</option>
+        </select>
+        <span>awake</span>
+        <select name="awake">
+            <option value="6a">6am</option>
+            <option value="7a">7am</option>
+            <option value="8a">8am</option>
+            <option value="9a">9am</option>
+            <option value="10a">10am</option>
+            <option value="11a">11am</option>
+            <option value="0p">0pm</option>
+            <option value="1p">1pm</option>
+        </select>
+    </p>
+    <p>Feeling ?
+        <br>
+        <input type="radio" name="q1" value="Excellent"> Excellent
+        <br>
+        <input type="radio" name="q1" value="Good"> Good
+        <br>
+        <input type="radio" name="q1" value="Fair"> Fair
+        <br>
+        <input type="radio" name="q1" value="Poor"> Poor
+    </p>
+
+    <p>How did ?
+        <br>
+        <textarea rows="3"></textarea>
+    </p>
+
+</div>
+<div class="ribbon-line"><span></span></div>
+<div class="mug-bottom"></div>
+
+</div>
+ <!----- メイン END ----->
+ 
+ <!----- フッター ----->
+ <footer></footer>
+ <!----- フッター END ----->
+ </body>
+</html>
