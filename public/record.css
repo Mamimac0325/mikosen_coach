@@ -1,0 +1,44 @@
+body {
+    font-family: 'Copperplate',sans-serif;
+    width: 400px;
+    font-size: 0px;
+}
+
+h1{
+    color:#dddddd;
+    font-size: 50px;
+}
+
+.coffee {
+    background-color: #4d260b;
+    color:white;
+    margin: 0 25px;
+    font-size: 20px;
+}
+.mug {
+    background-color: #81D8D0;
+    font-size: 20px;
+    color: #00494d;
+}
+
+.line-left {
+    background-color: #81D8D0;
+    border-left: solid white 40px;
+    border-bottom: solid white 40px;
+    margin-left: 30px;
+    padding: 20px 0 0 20px;
+}
+
+.ribbon-line{
+    background-color: white;
+    border-bottom: solid white 40px;
+    margin-top: -40px;
+}
+
+.mug-bottom{
+    background-color: #81D8D0;
+    border-left: solid white 40px;
+    margin-left: 30px;
+    padding-left: 20px;
+    height: 60px;
+}
