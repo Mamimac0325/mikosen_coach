@@ -1,17 +1,17 @@
 body {
-    font-family: 'Copperplate',sans-serif;
+    font-family: 'Copperplate', sans-serif;
     width: 400px;
     font-size: 0px;
 }
 
-h1{
-    color:#dddddd;
+h1 {
+    color: #dddddd;
     font-size: 50px;
 }
 
 .coffee {
     background-color: #4d260b;
-    color:white;
+    color: white;
     margin: 0 25px;
     font-size: 20px;
 }
@@ -29,13 +29,13 @@ h1{
     padding: 20px 0 0 20px;
 }
 
-.ribbon-line{
+.ribbon-line {
     background-color: white;
     border-bottom: solid white 40px;
     margin-top: -40px;
 }
 
-.mug-bottom{
+.mug-bottom {
     background-color: #81D8D0;
     border-left: solid white 40px;
     margin-left: 30px;

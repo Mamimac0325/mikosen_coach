@@ -1,16 +1,16 @@
 body {
-    font-family: 'Copperplate',sans-serif;
+    font-family: 'Copperplate', sans-serif;
     width:800px;
 }
 
-h1{
+h1 {
     font-size: 40px;
     margin-left: -10px;
     margin-bottom: 0px;
 
 }
 
-.left-line{
+.side-line {
     border-left: #333333 solid 15px;
     border-right: #333333 solid 15px;
     padding: 10px 0 0 40px;
@@ -18,35 +18,35 @@ h1{
     height: 500px;
 }
 
-.gold-line{
+.gold-line {
     border: #ffd700 solid 7px;
     margin: 0 -100px;
     padding: 0 -100px;
 }
 
-.blk-1{
+.blk-1 {
     border: solid 1px;    
     margin: 0 -100px;
     padding: 0 -100px;
 }
 
-.log{
+.log {
     height:300px;
 }
 
-.blk-5{
+.blk-5 {
     border: #333333 solid 5px;
     margin: 0 -100px;
     padding: 0 -100px;
 }
 
-.tiff-line{
+.tiff-line {
     border: #81d8d1 solid 4px;
     margin: 0 -100px;
     padding: 0 -100px;
 }
 
-.blk-1-2{
+.blk-1-2 {
     border: solid 1px;    
     margin: 0 -100px;
     padding: 0 -100px;
