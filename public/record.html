@@ -3,7 +3,10 @@
  <head>
  <meta charset="utf-8">
  <link rel="stylesheet" href="record.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
  <title>Sleep record</title>
+ <script type="text/javascript" src="record.js"></script>
+
  <!--[if lt IE 9]>
  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
  <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
@@ -12,62 +15,104 @@
  
  <body>
  <!----- ヘッダー yuge ----->
-     <h1>Good morning.</h1>
+ <div id="container">
+    <div id="mug">
+        <h1 class="yuge">Good morning.</h1>
 
  <!----- ヘッダー END ----->
  <p class="coffee">How was the sleep ? </p>
 
  <!----- メイン mag ----->
-<div class="mug">
+ <div class="mug">
     <div class="line-left">
-    <p>Time ?
-        <br>
-        <span>start</span>
-        <select name="start">
-            <option value="9">9pm</option>
-            <option value="10">10pm</option>
-            <option value="11">11pm</option>
-            <option value="0">0am</option>
-            <option value="1">1am</option>
-            <option value="2">2am</option>
-            <option value="3">3am</option>
-            <option value="4">4am</option>
-        </select>
-        <span>awake</span>
-        <select name="awake">
-            <option value="6a">6am</option>
-            <option value="7a">7am</option>
-            <option value="8a">8am</option>
-            <option value="9a">9am</option>
-            <option value="10a">10am</option>
-            <option value="11a">11am</option>
-            <option value="0p">0pm</option>
-            <option value="1p">1pm</option>
-        </select>
-    </p>
-    <p>Feeling ?
-        <br>
-        <input type="radio" name="q1" value="Excellent"> Excellent
-        <br>
-        <input type="radio" name="q1" value="Good"> Good
-        <br>
-        <input type="radio" name="q1" value="Fair"> Fair
-        <br>
-        <input type="radio" name="q1" value="Poor"> Poor
-    </p>
+    <p>Time ?</p>
+        <form class="start">
+            <span>start</span>
+                <select id="start" name="start">
+                    <option value="9pm">9pm</option>
+                    <option value="10pm">10pm</option>
+                    <option value="11pm">11pm</option>
+                    <option value="0">0am</option>
+                    <option value="1">1am</option>
+                    <option value="2">2am</option>
+                    <option value="3">3am</option>
+                    <option value="4">4am</option>
+                </select>
 
-    <p>How did ?
+        </form>
+        <form>
+            <span>awake</span>
+                <select id="awake" name="awake">
+                    <option value="6a">6am</option>
+                    <option value="7a">7am</option>
+                    <option value="8a">8am</option>
+                    <option value="9a">9am</option>
+                    <option value="10a">10am</option>
+                    <option value="11a">11am</option>
+                    <option value="0p">0pm</option>
+                    <option value="1p">1pm</option>
+                </select>
+            </form>
+
+    <p>Feeling ?</p>
+        <input type="radio" name="feel" id="Excellent" value="Excellent"><label> Excellent</label>
         <br>
-        <textarea rows="3"></textarea>
-    </p>
+        <input type="radio" name="feel" id="Good" value="Good"><label> Good</label>
+        <br>
+        <input type="radio" name="feel" id="Fair" value="Fair"><label> Fair </label>
+        <br>
+        <input type="radio" name="feel" id="Poor" value="Poor"><label> Poor </label>
 
-</div>
-<div class="ribbon-line"><span></span></div>
-<div class="mug-bottom">
-    <input class="input" type="submit" value="Record">
-</div>
+    <p>How did ?</p>
+        <textarea name="howdid" id="howdid" maxlength="200" cols="50" rows="5"></textarea>
 
-</div>
+ </div>
+ <div class="ribbon-line"><span></span></div>
+ <div id="mug-bottom" class="mug-bottom">
+    <input class="input" type="button" id="record-btn" value="Record">
+ </div>
+
+
+ </div>
+</div><!-- Grid mag div endタグ -->
+
+<!---- ここからLOGのhtml ---->
+<!--縦のライン-->
+<div id="log">
+ <div class="side-line">
+    <div class="title"><h1>Record Log</h1></div>
+
+ <!--上部・横のライン-->
+    <div class="blk-1"></div>
+    <div class="gold-line"></div>
+
+ <!--ログ-->
+    <div class="log"><!--class="log"-->
+        <table id="logtable">
+            <thead>
+                <tr>
+                    <th>Start</th>
+                    <th>Awake</th>
+                    <th>Feeling</th>
+                    <th>How did?</th>
+                </tr>
+
+            </thead>
+            <tbody id="logcontents">
+            </tbody>
+            
+        </table>
+    </div>
+
+ <!--下部・横のライン-->
+    <div class="blk-5"></div>
+    <br>
+    <div class="tiff-line"></div>
+    <div class="blk-1-2"></div>
+
+ </div>
+</div> <!-- Grid log div endタグ -->
+</div> <!-- Grid contaier div endタグ -->
  <!----- メイン END ----->
  
  <!----- フッター ----->
