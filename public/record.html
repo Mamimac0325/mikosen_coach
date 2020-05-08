@@ -5,6 +5,7 @@
  <link rel="stylesheet" href="record.css">
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
  <title>Sleep record</title>
+ <script type="text/javascript" src="storage.js"></script> 
  <script type="text/javascript" src="record.js"></script>
 
  <!--[if lt IE 9]>
@@ -52,7 +53,7 @@
                     <option value="0p">0pm</option>
                     <option value="1p">1pm</option>
                 </select>
-            </form>
+        </form>
 
     <p>Feeling ?</p>
         <input type="radio" name="feel" id="Excellent" value="Excellent"><label> Excellent</label>
@@ -62,6 +63,15 @@
         <input type="radio" name="feel" id="Fair" value="Fair"><label> Fair </label>
         <br>
         <input type="radio" name="feel" id="Poor" value="Poor"><label> Poor </label>
+
+    <p>Bath ?</p>
+        <input type="radio" name="bath" id="hot-water" value="Hot water"><label>Hot water</label>
+        <br>
+        <input type="radio" name="bath" id="Bath bomb" value="Bath bomb"><label>Bath bomb</label>
+        <br>
+        <input type="radio" name="bath" id="Sauna" value="Sauna"><label>Sauna</label>
+        <br>
+        <input type="radio" name="bath" id="Shower" value="Shower"><label>Shower</label>
 
     <p>How did ?</p>
         <textarea name="howdid" id="howdid" maxlength="200" cols="50" rows="5"></textarea>
@@ -94,6 +104,7 @@
                     <th>Start</th>
                     <th>Awake</th>
                     <th>Feeling</th>
+                    <th>Bath</th>
                     <th>How did?</th>
                 </tr>
 
