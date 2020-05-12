@@ -1,0 +1,2 @@
+# Otonayou Oshirihuki
+majide wakewakaran
